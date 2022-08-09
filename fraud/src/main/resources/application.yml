@@ -1,0 +1,20 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: fraud
+  data:
+    mongodb:
+      database: fraud
+      host: localhost
+      port: 27017
+      username: maria
+      password: maria!
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MongoDBDialect
+        format_sql: true
+    show-sql: true
