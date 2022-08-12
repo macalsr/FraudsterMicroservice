@@ -1,6 +1,7 @@
 package org.project.service;
 
 import org.project.builder.FraudBuilder;
+import org.project.model.FraudCheckHistory;
 import org.project.repository.FraudCheckRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,8 +19,8 @@ public class FraudCheckService {
     }
 
     public boolean isFradulentCustomer(String customerId){
-
-        repository.save(builder.buildById(customerId));
+        FraudCheckHistory history = repository.findByCustomerId(customerId);
+        repository.save(builder.converter(history));
         return false;
     }
 }

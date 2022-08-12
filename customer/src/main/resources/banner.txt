@@ -2,5 +2,6 @@ ____ _  _ ____ ___ ____ _  _ ____ ____
 |    |  | [__   |  |  | |\/| |___ |__/
 |___ |__| ___]  |  |__| |  | |___ |  \
 
-${application.title} ${application.version}
-Powered by Spring Boot ${spring-boot.version}
+
+
+    */

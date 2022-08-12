@@ -18,7 +18,7 @@ sudo docker-compose up -d
 ```
 
 Atualize as dependencias e rodar o liquibase execute o comando:
-```
+``` 
 mvn clean install
 ```
 

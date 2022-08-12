@@ -22,4 +22,5 @@ public class FraudCheckHistory {
     private String customerId;
     private Boolean isFraudster;
     private Date createdAt;
+
 }

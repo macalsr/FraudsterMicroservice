@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface FraudCheckRepository extends MongoRepository<FraudCheckHistory, String> {
 
+    FraudCheckHistory findByCustomerId(String customerId);
 }
